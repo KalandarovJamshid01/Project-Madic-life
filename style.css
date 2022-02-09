@@ -23,7 +23,12 @@ html {
   flex-direction: column;
   gap: 3rem;
   align-items: center;
-  background-image: url("hero.jpg");
+  background-image: linear-gradient(
+      to right bottom,
+      #7ed56f6c,
+      rgba(40, 180, 133, 0.329)
+    ),
+    url("hero.jpg");
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
