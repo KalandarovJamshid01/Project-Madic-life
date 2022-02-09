@@ -11,55 +11,58 @@ DarkGreen: #28b485
   padding: 0;
   margin: 0;
 }
+html {
+  font-size: 62.5%;
+}
 .hero {
   height: 95vh;
   width: 95vw;
-  padding: 30px;
+  padding: 3rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
-  gap: 30px;
+  gap: 3rem;
   align-items: center;
   background-image: url("hero.jpg");
   background-size: cover;
   background-position: center;
   clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
 }
-h1,
-h2 {
+.hero-text,
+.hero-summary {
   color: white;
-  letter-spacing: 20px;
+  letter-spacing: 2rem;
   font-weight: 600;
 }
-h1 {
-  font-size: 84px;
+.hero-text {
+  font-size: 8.4rem;
   animation-name: h1;
   animation-duration: 2s;
   animation-delay: 1s;
 }
-h2 {
+.hero-summary {
   width: 50%;
-  font-size: 44px;
+  font-size: 4.4rem;
   text-align: center;
   line-height: 1.5;
   animation-name: h2;
   animation-duration: 2s;
   animation-delay: 1s;
 }
-button {
+.hero-btn {
   color: #555;
-  font-size: 20px;
-  padding: 20px 40px;
-  border-radius: 30px;
+  font-size: 2rem;
+  padding: 2rem 4rem;
+  border-radius: 3rem;
   background-color: white;
   border: none;
   position: relative;
 }
-button::after {
+.hero-btn::after {
   width: 100%;
   height: 100%;
   color: #555;
-  border-radius: 30px;
+  border-radius: 3rem;
   background-color: white;
   content: "";
   position: absolute;
@@ -71,9 +74,8 @@ button::after {
   animation-duration: 1s;
   animation-iteration-count: infinite;
 }
-img {
+.hero-img {
   align-self: flex-start;
-  width: 5%;
 }
 @keyframes h1 {
   0% {
