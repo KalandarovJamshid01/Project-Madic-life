@@ -1,0 +1,19 @@
+.hero__text,
+.hero__summary {
+  @extend%text;
+}
+.hero__text {
+  font-size: 8.4rem;
+  animation-name: h1;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
+.hero__summary {
+  width: 50%;
+  font-size: 4.4rem;
+  text-align: center;
+  line-height: 1.5;
+  animation-name: h2;
+  animation-duration: 2s;
+  animation-delay: 1s;
+}
