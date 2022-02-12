@@ -1,0 +1,25 @@
+.cart {
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+  background-color: #fafafa;
+  padding: 4.2rem 3rem;
+  text-align: center;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+  &:hover {
+    transform: translateY(-3rem) scale(1.1);
+  }
+  transition: all 0.2s;
+  border-radius: 0.5rem;
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+  opacity: 0.8;
+}
+.feature-icon {
+  font-size: 6.4rem;
+  font-weight: 700;
+  background-image: linear-gradient(to right bottom, $green-color, $dark-color);
+  background-clip: text;
+  display: inline-block;
+  -webkit-background-clip: text;
+  color: transparent;
+}

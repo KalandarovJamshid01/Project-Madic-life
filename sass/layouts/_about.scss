@@ -1,0 +1,33 @@
+.img-box {
+  position: relative;
+  .img-box_photo {
+    position: absolute;
+    z-index: 10;
+    border-radius: 0.5rem;
+    box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+    &:hover {
+      outline: 1.5rem solid $green-color;
+      outline-offset: 2rem;
+      transform: scale(1.2);
+      z-index: 20;
+    }
+    transition: all 0.2s;
+  }
+  &__1 {
+    top: -2rem;
+    left: 0rem;
+  }
+  &__2 {
+    right: 0;
+    top: 2rem;
+  }
+  &__3 {
+    left: 20%;
+    top: 10rem;
+  }
+  &:hover &_photo:not(:hover) {
+    transform: scale(0.9);
+  }
+}
+
+

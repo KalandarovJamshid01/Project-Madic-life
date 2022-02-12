@@ -33,16 +33,32 @@
   letter-spacing: 0.2rem;
 }
 .heading-tretiary {
+  opacity: 0.8;
   font-size: 1.6rem;
   text-transform: uppercase;
   margin-bottom: 2.4rem;
   color: #333;
 }
 .text-box {
+  opacity: 0.9;
   font-size: 1.6rem;
   &:not(:last-child) {
     margin-bottom: 3rem;
     line-height: 1.7;
     color: #333;
   }
+}
+.text-boxx {
+  opacity: 0.9;
+  font-size: 1.4rem;
+  color: #555;
+  line-height: 1.7;
+  text-align: center;
+}
+.heading-tertiary {
+  opacity: 0.8;
+  font-size: 1.4rem;
+  color: #555;
+  text-transform: uppercase;
+  text-align: center;
 }

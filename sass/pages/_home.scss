@@ -2,4 +2,20 @@
   padding: 30rem 0rem;
   background-color: $section-background-color;
   margin-top: -35vh;
+  background-color: #f0f0f0;
+  margin-bottom: -10rem;
+}
+.feature-section {
+  margin-top: -35vh;
+  width: 100%;
+  margin: 0 auto;
+  background-image: linear-gradient(to right bottom, $green-color, $dark-color),
+    url("../images/nat-4.jpg");
+  background-size: cover;
+  background-position: center;
+  padding: 25rem 0rem;
+  transform: skewY(-7deg);
+  & > * {
+    transform: skewY(7deg);
+  }
 }
