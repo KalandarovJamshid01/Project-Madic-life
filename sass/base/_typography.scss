@@ -17,3 +17,32 @@
   animation-duration: 2s;
   animation-delay: 1s;
 }
+.heading-secondary {
+  font-size: 3.6rem;
+  text-transform: uppercase;
+  display: inline-block;
+  -webkit-background-clip: text;
+  background-image: linear-gradient(to right, $green-color, $dark-color);
+  background-clip: text;
+  color: transparent;
+  &:hover {
+    transform: skewY(2deg) skewX(15deg);
+    text-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
+  }
+  transition: all 0.5s;
+  letter-spacing: 0.2rem;
+}
+.heading-tretiary {
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  margin-bottom: 2.4rem;
+  color: #333;
+}
+.text-box {
+  font-size: 1.6rem;
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+    line-height: 1.7;
+    color: #333;
+  }
+}

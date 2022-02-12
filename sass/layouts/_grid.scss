@@ -2,16 +2,13 @@
 .row {
   max-width: 114rem;
   margin: 0 auto;
-  background-color: orangered;
+
   &:not(:last-child) {
     margin-bottom: $row-gap;
   }
   @include clearfix;
   [class^="col-"] {
-    background-color: yellow;
     float: left;
-    height: 5rem;
-
     &:not(:last-child) {
       margin-right: $column-gap;
     }

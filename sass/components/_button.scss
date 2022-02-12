@@ -39,3 +39,20 @@
   animation-duration: 0.2s;
   animation-iteration-count: infinite;
 }
+.btn-text {
+  &:link,
+  &:visited {
+    font-size: 1.6rem;
+    color: $green-color;
+    display: inline-block;
+    text-decoration: none;
+    border-bottom: 1px solid $green-color;
+  }
+  &:hover {
+    color: white;
+    background-color: $green-color;
+    padding: 3px;
+    transform: translateY(-0.5rem);
+  }
+  transition: all 0.2s;
+}
