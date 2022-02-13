@@ -1,17 +1,1 @@
-.hero {
-  height: 95vh;
-  width: 100%;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 3rem;
-  align-items: center;
-  background-image: linear-gradient(to right bottom, $green-color, $dark-color),
-    url("../images/hero.jpg");
-  background-size: cover;
-  background-position: center;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-}
-.empty {
-  height: 2vh;
-}
+

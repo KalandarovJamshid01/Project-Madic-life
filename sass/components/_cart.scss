@@ -1,0 +1,66 @@
+.tour__cart {
+  position: relative;
+  &-basic {
+    width: 100%;
+    height: 50rem;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: 2s;
+    perspective: 150rem;
+    -moz-perspective: 150rem;
+    backface-visibility: hidden;
+    -webkit-backface-visibility: hidden;
+    box-shadow: 0 1.5rem 3rem $shadow-color;
+    border-radius: 0.5rem;
+  }
+  &-front {
+    background-color: #fdfdfd;
+
+    &-img {
+      width: 100%;
+      height: 45%;
+      clip-path: polygon();
+      background-image: linear-gradient(
+          to left bottom,
+          rgba($color-secondary-light-1, 0.4),
+          rgba($color-secondary-light-2, 0.4)
+        ),
+        url("../images/nat-5.jpg");
+      background-size: cover;
+      background-position: center;
+      background-blend-mode: normal;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+      &-text {
+        font-size: 3rem;
+        font-weight: 400;
+        text-transform: uppercase;
+        color: white;
+        background-image: linear-gradient(
+          to right bottom,
+          $color-secondary-light-1,
+          $color-secondary-light-2
+        );
+        padding: 1rem;
+        position: absolute;
+        right: 2rem;
+        top: 12rem;
+      }
+    }
+  }
+  &-back {
+    background-image: linear-gradient(
+      to right bottom,
+      $color-secondary-light-1,
+      $color-secondary-light-2
+    );
+    transform: rotateY(-180deg);
+  }
+  &:hover &-front {
+    transform: rotateY(180deg);
+  }
+  &:hover &-back {
+    transform: rotateY(0deg);
+  }
+  transition: all 2s;
+}

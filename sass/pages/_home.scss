@@ -1,8 +1,24 @@
+.hero {
+  height: 95vh;
+  width: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  align-items: center;
+  background-image: linear-gradient(to right bottom, $green-color, $dark-color),
+    url("../images/hero.jpg");
+  background-size: cover;
+  background-position: center;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+}
+.empty {
+  height: 2vh;
+}
 .section-about {
   padding: 30rem 0rem;
   background-color: $section-background-color;
   margin-top: -35vh;
-  background-color: #f0f0f0;
   margin-bottom: -10rem;
 }
 .feature-section {
@@ -18,4 +34,9 @@
   & > * {
     transform: skewY(7deg);
   }
+}
+.tour-section {
+  padding: 25rem 0 50rem 0;
+  background-color: $section-background-color;
+  margin-top: -13vh;
 }
