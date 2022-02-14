@@ -38,6 +38,16 @@
     transform: scale(2);
   }
 }
+@keyframes btn-green {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
 @keyframes main-btn {
   0% {
     transform: scale(0.7);
