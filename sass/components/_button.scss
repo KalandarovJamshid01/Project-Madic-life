@@ -7,6 +7,12 @@
   border: none;
   position: relative;
   cursor: pointer;
+  &-green {
+    background-color: $color-primary-dark;
+    color: white;
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 }
 .hero__btn:hover {
   color: white;
