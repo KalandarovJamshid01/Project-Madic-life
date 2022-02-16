@@ -6,7 +6,7 @@
     border-radius: 0.5rem;
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
     &:hover {
-      outline: 1.5rem solid $green-color;
+      outline: 1.5rem solid $color-primary-dark;
       outline-offset: 2rem;
       transform: scale(1.2);
       z-index: 20;
@@ -29,5 +29,3 @@
     transform: scale(0.9);
   }
 }
-
-

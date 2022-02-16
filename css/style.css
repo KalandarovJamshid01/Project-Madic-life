@@ -35,7 +35,7 @@ body {
   text-transform: uppercase;
   display: inline-block;
   -webkit-background-clip: text;
-  background-image: linear-gradient(to right, #7ed56f70, #28b4857a);
+  background-image: linear-gradient(to right, #7ed56f, #28b485);
   background-clip: text;
   color: transparent;
   transition: all 0.5s;
@@ -417,12 +417,112 @@ body {
   left: 0;
   z-index: -3;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  background-color: #fafafa; }
 
 .video {
+  opacity: 0.2;
   width: 100%;
   height: 100%;
   object-fit: cover; }
+
+.footer {
+  padding: 10rem;
+  background-color: #222; }
+  .footer-logo {
+    width: 15%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; }
+    .footer-logo img {
+      width: 100%;
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+      background-clip: text;
+      display: inline-block;
+      -webkit-background-clip: text;
+      color: transparent; }
+    .footer-logo .nat {
+      font-size: 3rem;
+      font-weight: 600;
+      background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+      background-clip: text;
+      display: inline-block;
+      -webkit-background-clip: text;
+      color: transparent; }
+  .footer_btm {
+    margin-top: 6rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 4rem; }
+    .footer_btm-left {
+      width: 40%;
+      padding: 2rem 0rem;
+      border-top: 1px solid white;
+      display: flex;
+      justify-content: flex-start;
+      gap: 1.5rem; }
+      .footer_btm-left-link {
+        text-decoration: none;
+        text-transform: uppercase;
+        font-size: 1.6rem;
+        font-weight: 400;
+        color: white;
+        display: inline-block;
+        padding: 3px; }
+        .footer_btm-left-link:hover {
+          box-shadow: 0 1.5rem 3rem black;
+          transform: rotate(10deg);
+          background-color: #111;
+          color: #28b485;
+          transition: 0.2s; }
+    .footer_btm-right {
+      width: 40%;
+      padding: 2rem 0rem;
+      border-top: 1px solid white; }
+
+.footer-text {
+  font-size: 1.6rem;
+  color: white;
+  line-height: 1.7; }
+
+.forma {
+  margin: 0 auto;
+  width: 114rem;
+  background-image: url("../images/nat-10.jpg");
+  background-size: cover; }
+  .forma_sign {
+    clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
+    background-color: rgba(250, 250, 250, 0.8);
+    padding: 4rem; }
+    .forma_sign-up {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      width: 100%; }
+      .forma_sign-up-btn {
+        width: 25%;
+        color: white;
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }
+      .forma_sign-up input {
+        background-color: rgba(249, 249, 249, 0.9);
+        width: 40%;
+        border-radius: 1rem;
+        padding: 2rem;
+        border: none; }
+        .forma_sign-up input::placeholder {
+          font-size: 1.8rem;
+          font-weight: 600;
+          color: #333; }
+        .forma_sign-up input:hover {
+          border-bottom: 4px solid orangered; }
+        .forma_sign-up input button {
+          width: 40%; }
+
+.right {
+  text-align: left; }
 
 .row {
   max-width: 114rem;
@@ -460,7 +560,7 @@ body {
     box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.4);
     transition: all 0.2s; }
     .img-box .img-box_photo:hover {
-      outline: 1.5rem solid #7ed56f70;
+      outline: 1.5rem solid #28b485;
       outline-offset: 2rem;
       transform: scale(1.2);
       z-index: 20; }
@@ -494,7 +594,7 @@ body {
 .feature-icon {
   font-size: 6.4rem;
   font-weight: 700;
-  background-image: linear-gradient(to right bottom, #7ed56f70, #28b4857a);
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
   background-clip: text;
   display: inline-block;
   -webkit-background-clip: text;
@@ -542,3 +642,7 @@ body {
 .stories {
   padding: 15rem 0rem;
   position: relative; }
+
+.form {
+  padding: 6rem;
+  background-image: linear-gradient(to right bottom, #7ed56f, #28b485); }

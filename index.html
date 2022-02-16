@@ -11,7 +11,12 @@
   <body>
     <div class="empty"></div>
     <div class="hero">
-      <img class="hero__logo" src="images/logo-white.png" alt="" />
+      <img
+        class="hero__logo"
+        src="images/logo-white.png"
+        alt=""
+        style="width: 5%; margin: 3rem"
+      />
       <h1 class="hero__text">OUTDOORS</h1>
       <h2 class="hero__summary">IS WHERE LIFE HAPPENS!</h2>
       <button class="hero__btn">DISCOVER OUR TOURS</button>
@@ -244,13 +249,20 @@
       </section>
       <section class="stories">
         <div class="story__video">
-          <video class="video" src="" autoplay muted loop>
-            <source src="images/video.mp4" type="video.mp4" />
+          <video
+            class="video"
+            src="images/video.webm"
+            type="video.webm"
+            src="images/video.mp4"
+            type="video.mp4"
+            autoplay
+            muted
+            loop
+          >
+            <!-- <source src="images/video.mp4" type="video.mp4" />
+            <source src="images/video.webm" type="video.webm" /> -->
           </video>
         </div>
-        <video class="video" src="" autoplay muted loop>
-          <source src="images/video.mp4" type="video.mp4" />
-        </video>
         <div class="u-text-center u-text-bottom-big">
           <h2 class="heading-secondary">Most popular tours</h2>
         </div>
@@ -300,6 +312,61 @@
         </div>
         <div class="read">
           <a href="#" class="btn-text">Read all stories</a>
+        </div>
+      </section>
+      <section class="form">
+        <div class="forma">
+          <div class="forma_sign">
+            <div class="u-text-center u-text-bottom-big right">
+              <h2 class="heading-secondary">Start booking now</h2>
+            </div>
+            <form action="#" class="forma_sign-up">
+              <input type="text" placeholder="FULL NAME" />
+              <input type="email" placeholder="EMAIL" name="" id="" />
+              <div class="form-check">
+                <div
+                  style="
+                    width: 3rem;
+                    height: 3rem;
+                    border: 4px solid green;
+                    border-radius: 50%;
+                  "
+                ></div>
+              </div>
+              <button class="hero__btn forma_sign-up-btn">
+                NEXT STEP &rarr;
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="footer">
+        <div class="footer-logo">
+          <img src="images/logo-white.png" alt="" />
+          <p class="nat">NATOURS</p>
+        </div>
+        <div class="footer_btm">
+          <div class="footer_btm-left">
+            <a href="#" class="footer_btm-left-link">company</a>
+            <a href="#" class="footer_btm-left-link">contact us</a>
+            <a href="#" class="footer_btm-left-link">careers</a>
+            <a href="#" class="footer_btm-left-link">Privacy and policy</a>
+            <a href="#" class="footer_btm-left-link">terms</a>
+          </div>
+          <div class="footer_btm-right">
+            <p class="footer-text">
+              Built by
+              <a href="#" class="footer_btm-left-link">JONAS SCHMEDTMANN</a> for
+              his online course
+              <a href="#" class="footer_btm-left-link"
+                >advanced css and sass.</a
+              >
+              Copyright © by Jonas Schmedtmann. You are 100% allowed to use this
+              webpage for both personal and commercial use, but NOT to claim it
+              as your own design. A credit to the original author, Jonas
+              Schmedtmann, is of course highly appreciated!
+            </p>
+          </div>
         </div>
       </section>
     </main>

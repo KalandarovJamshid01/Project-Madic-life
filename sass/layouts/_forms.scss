@@ -1,0 +1,43 @@
+.forma {
+  margin: 0 auto;
+  width: 114rem;
+  background-image: url("../images/nat-10.jpg");
+  background-size: cover;
+  &_sign {
+    clip-path: polygon(0 0, 60% 0, 40% 100%, 0 100%);
+    background-color: rgba(#fafafa, 0.8);
+    padding: 4rem;
+    &-up {
+      display: flex;
+      flex-direction: column;
+      gap: 3rem;
+      width: 100%;
+      &-btn {
+        width: 25%;
+        color: white;
+        background-image: linear-gradient(to right bottom, #7ed56f, #28b485);
+      }
+      input {
+        background-color: rgba(#f9f9f9, 0.9);
+        width: 40%;
+        border-radius: 1rem;
+        padding: 2rem;
+        border: none;
+        &::placeholder {
+          font-size: 1.8rem;
+          font-weight: 600;
+          color: #333;
+        }
+        &:hover {
+          border-bottom: 4px solid orangered;
+        }
+        button {
+          width: 40%;
+        }
+      }
+    }
+  }
+}
+.right {
+  text-align: left;
+}

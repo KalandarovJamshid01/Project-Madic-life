@@ -17,7 +17,11 @@
 .feature-icon {
   font-size: 6.4rem;
   font-weight: 700;
-  background-image: linear-gradient(to right bottom, $green-color, $dark-color);
+  background-image: linear-gradient(
+    to right bottom,
+    $color-primary,
+    $color-primary-dark
+  );
   background-clip: text;
   display: inline-block;
   -webkit-background-clip: text;
